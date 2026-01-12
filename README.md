@@ -70,6 +70,8 @@ pip install numpy matplotlib
 
 # Run the benchmark suite
 python3 dho_benchmark_suite.py
+
+```
 ---
 
 📊 Analysis & Results
