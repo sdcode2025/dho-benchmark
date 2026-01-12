@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Matplotlib/Image outputs (Optional)
+# আপনি যদি গ্রাফগুলো গিটহাবে না রাখতে চান তবে নিচের লাইনগুলো আন-কমেন্ট করুন
+# *.png
+# *.pdf
+
+# User-specific files
+.vscode/
+.idea/
