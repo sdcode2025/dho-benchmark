@@ -28,22 +28,14 @@ The benchmark explicitly tests *reasoning quality*, not just numerical output.
 
 The system is governed by the second-order non-autonomous differential equation:
 
-\[
-m\ddot{x} + c\dot{x} + kx = F_0 \cos(\omega t)
-\]
+m d²x/dt² + c dx/dt + kx = F₀ cos(ωt)
 
 For numerical integration, this is converted into a system of first-order
 coupled ODEs:
 
-\[
-\frac{dx}{dt} = v
-\]
+dx/dt = v  
 
-\[
-\frac{dv}{dt} =
-\frac{1}{m}\left[F_0 \cos(\omega t) - cv - kx\right]
-\]
-
+dv/dt = (1/m) [ F₀ cos(ωt) − c v − k x ]
 ---
 
 ## 🚀 Key Features
@@ -78,7 +70,6 @@ pip install numpy matplotlib
 
 # Run the benchmark suite
 python3 dho_benchmark_suite.py
-
 ---
 
 📊 Analysis & Results
