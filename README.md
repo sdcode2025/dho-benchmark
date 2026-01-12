@@ -1,4 +1,3 @@
-````markdown
 # DHO-Benchmark: Physics-Grounded AI Evaluation Suite
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -55,10 +54,10 @@ coupled ODEs:
 
 - **Resonance Scanning**  
   Automated frequency sweeps to identify resonance peaks and damping-induced
-  frequency shifts (\(\omega_r\)).
+  frequency shifts (\omega_r).
 
 - **Monte Carlo Suite**  
-  Introduces Gaussian noise (~5%) to physical parameters (\(m, c, k\)) to produce
+  Introduces Gaussian noise (~5%) to physical parameters (m, c, k) to produce
   probabilistic resonance curves and confidence intervals.
 
 - **Visualization**  
@@ -79,44 +78,34 @@ pip install numpy matplotlib
 
 # Run the benchmark suite
 python3 dho_benchmark_suite.py
-````
 
 ---
 
-## 📊 Analysis & Results
-
-### 1️⃣ Resonance Peak Shift
-
-The simulation accurately captures the **damping-induced resonance shift**,
-where the resonance frequency is slightly lower than the system’s natural
-frequency.
-
-### 2️⃣ Monte Carlo Uncertainty
-
-Shaded regions in the resonance plots represent **1σ and 2σ confidence
-intervals**, demonstrating increased variance near resonance where the system
-is most sensitive to parameter fluctuations.
+📊 Analysis & Results
+1️⃣ Resonance Peak Shift
+The simulation accurately captures the damping-induced resonance shift, where the resonance frequency is slightly lower than the system’s natural frequency.
+2️⃣ Monte Carlo Uncertainty
+Shaded regions in the resonance plots represent 1σ and 2σ confidence intervals, demonstrating increased variance near resonance where the system is most sensitive to parameter fluctuations.
 
 ---
 
-## 🧠 Why This for AI Benchmarking?
-
+🧠 Why This for AI Benchmarking?
 Standard LLMs and autonomous agents often struggle with:
+Numerical Drift — incorrect time-step or integrator choice.
+Sign Errors — misinterpreting damping or restoring forces.
+Physical Plausibility — producing unbounded or non-decaying solutions.
+Statistical Interpretation — failing to explain increased variance near resonance.
+This benchmark provides a ground-truth physics reference to evaluate whether an AI system can reason about numerical stability, physical laws, and uncertainty, not just compute equations.
 
-* **Numerical Drift** — incorrect time-step or integrator choice.
-* **Sign Errors** — misinterpreting damping or restoring forces.
-* **Physical Plausibility** — producing unbounded or non-decaying solutions.
-* **Statistical Interpretation** — failing to explain increased variance near
-  resonance.
-
-This benchmark provides a **ground-truth physics reference** to evaluate whether
-an AI system can reason about **numerical stability, physical laws, and
-uncertainty**, not just compute equations.
+---
+📄 License
+This project is licensed under the MIT License.
 
 ---
 
-## 📄 License
+## 👤 Author
 
-This project is licensed under the **MIT License**.
-
-```
+**Suvankar Das**  
+M.Sc. Physics | Computational Physics | AI Benchmarking  
+GitHub: https://github.com/sdcode2025  
+LinkedIn: https://www.linkedin.com/in/suvankar-das-51916711b
