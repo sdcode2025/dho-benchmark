@@ -74,7 +74,7 @@ python3 dho_benchmark_suite.py
 ```
 ---
 
-📊 Analysis & Results
+## 📊 Analysis & Results
 1️⃣ Resonance Peak Shift
 The simulation accurately captures the damping-induced resonance shift, where the resonance frequency is slightly lower than the system’s natural frequency.
 2️⃣ Monte Carlo Uncertainty
@@ -82,7 +82,7 @@ Shaded regions in the resonance plots represent 1σ and 2σ confidence intervals
 
 ---
 
-🧠 Why This for AI Benchmarking?
+## 🧠 Why This for AI Benchmarking?
 Standard LLMs and autonomous agents often struggle with:
 Numerical Drift — incorrect time-step or integrator choice.
 Sign Errors — misinterpreting damping or restoring forces.
@@ -91,7 +91,7 @@ Statistical Interpretation — failing to explain increased variance near resona
 This benchmark provides a ground-truth physics reference to evaluate whether an AI system can reason about numerical stability, physical laws, and uncertainty, not just compute equations.
 
 ---
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
 
 ---
